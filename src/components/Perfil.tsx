@@ -1,4 +1,5 @@
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet, TouchableOpacity } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 export const Perfil = () => {
   return (
@@ -6,9 +7,16 @@ export const Perfil = () => {
       <Text style={styles.text1}>Andressa Jandre</Text>
       <Text style={styles.text2}>andressaassisj</Text>
 
-      <View style={styles.button}>
-        <Button title="Adicionar status" onPress={() => {}} />
-        <Button title="Editar Perfil" onPress={() => {}} />
+      <View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button}>
+          <Icon name="comment" size={18} color="#fff" style={styles.icon} />
+          <Button color={"#fff"} title="Adicionar status" onPress={() => {}} />
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button}>
+          <Icon name="pencil" size={18} color="#fff" style={styles.icon} />
+          <Button color={"#fff"} title="Editar Perfil" onPress={() => {}} />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -18,10 +26,10 @@ const styles = StyleSheet.create({
   container: {
     padding: 25,
     backgroundColor: "#333",
-    borderRadius: 15,
-    marginBottom: 25,
+    borderRadius: 20,
+    marginBottom: 5,
     justifyContent: "space-around",
-    flexDirection: "row",
+    borderWidth: 7,
   },
   text1: {
     fontSize: 18,
@@ -33,10 +41,26 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#ffffff",
   },
+  buttonContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 10,
+  },
   button: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 10,  
-    marginBottom: 5,  
+    alignItems: "center",
+    backgroundColor: "#496ffa",
+    borderRadius: 30,
+    paddingVertical: 4,
+    paddingHorizontal: 12,
+    marginHorizontal: 3,
+  },
+  icon: {
+    marginRight: 8,
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });

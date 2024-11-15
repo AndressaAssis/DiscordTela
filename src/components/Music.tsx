@@ -1,40 +1,67 @@
 import { View, Text, Image, StyleSheet } from "react-native";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 export const Music = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text1}>Ouvindo Spotify</Text>  
-      <Image style={styles.music} source={require("../../assets/music.jpeg")} />
+      <View style={styles.containerMusic}>
+        <View style={styles.textContainerIcon}>
+          <Icon name="spotify" size={20} color="#1DB954" style={styles.icon} />
+          <Text style={styles.text1}>Ouvindo Spotify</Text>
+        </View>
 
-      <Text style={styles.text2}>COWBELL WARRIOR!</Text>
-      <Text style={styles.text2}>por SXMPRA</Text>
-      <Text style={styles.text2}>por álbum COWBELL WARRIOR</Text>
+        <Image
+          style={styles.music}
+          source={require("../../assets/music.jpeg")}
+        />
+      </View>
 
+      <View style={styles.containerText}>
+        <Text style={styles.text2}>COWBELL WARRIOR!</Text>
+        <Text style={styles.text2}>por SXMPRA</Text>
+        <Text style={styles.text2}>do álbum COWBELL WARRIOR</Text>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 25,
+    padding: 20,
     backgroundColor: "#333",
     borderRadius: 15,
-    marginBottom: 25,
+    marginBottom: 5,
     flexDirection: "row",
+    borderWidth: 7,
+  },
+  containerMusic: {
+    flexDirection: "column",
+    marginRight: 4,
+  },
+  textContainerIcon: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    marginBottom: 10,
   },
   text1: {
     fontSize: 15,
     marginBottom: 5,
     color: "#ffffff",
   },
+  icon: {
+    marginLeft: 10,
+  },
   music: {
     width: 90,
-    height: 100,
-
-    marginBottom: 15,
+    height: 90,
+  },
+  containerText: {
+    justifyContent: "center",
+    marginTop: 20,
   },
   text2: {
-    fontSize: 15,
+    fontSize: 16,
     color: "#ffffff",
-  }
+    marginBottom: 2,
+  },
 });
