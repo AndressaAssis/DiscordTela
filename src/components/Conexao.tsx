@@ -24,11 +24,12 @@ export const Conexao = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 25,
-    backgroundColor: "#333",
+    backgroundColor: "#2C2F33",
     borderRadius: 15,
     marginBottom: 5,
     justifyContent: "space-around",
     borderWidth: 7,
+    borderColor: "#23272A",
   },
   text1: {
     color: "#fff",

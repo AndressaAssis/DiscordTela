@@ -28,11 +28,12 @@ export const Music = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: "#333",
+    backgroundColor: "#2C2F33",
     borderRadius: 15,
     marginBottom: 5,
     flexDirection: "row",
     borderWidth: 7,
+    borderColor: "#23272A",
   },
   containerMusic: {
     flexDirection: "column",

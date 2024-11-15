@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container1: {
-    flex: 0.5,
+    flex: 0.7,
     backgroundColor: "#7cafa0",
   },
   logo: {
@@ -28,10 +28,10 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 50,
     position: "absolute",
-    backgroundColor: "#000",
+    backgroundColor: "#23272A",
     borderWidth: 6,
-    marginLeft: 40,
-    marginTop: 100,
+    marginLeft: 33,
+    marginTop: 96,
   },
   disponivel: {
     position: "absolute",

@@ -8,7 +8,7 @@ import { Conexao } from './src/components/Conexao';
 export default function App() {
   return (
 
-    <View style={styles.container}>
+    <View style={styles.containerPrincipal}>
       <Principal />
       <Perfil />
       <Music />
@@ -20,8 +20,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  containerPrincipal: {
     flex: 1,
-    backgroundColor: "#050505",
+    backgroundColor: "#23272A",
   }
 });

@@ -25,11 +25,12 @@ export const Perfil = () => {
 const styles = StyleSheet.create({
   container: {
     padding: 25,
-    backgroundColor: "#333",
+    backgroundColor: "#2C2F33",
     borderRadius: 20,
     marginBottom: 5,
     justifyContent: "space-around",
     borderWidth: 7,
+    borderColor: "#23272A",
   },
   text1: {
     fontSize: 18,
