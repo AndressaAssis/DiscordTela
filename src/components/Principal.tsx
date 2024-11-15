@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     backgroundColor: "#23272A",
     borderWidth: 6,
+    borderColor: "#23272A",
     marginLeft: 33,
     marginTop: 96,
   },
