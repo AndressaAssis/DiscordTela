@@ -4,7 +4,7 @@ A tela não precisa ter a implementação das funcionalidades, basta replicar o 
 
 ## FOTO DO PERFIL DO MEU DISCORD NO DISPOSITIVO MÓVEL
 
-![IMG1](https://github.com/user-attachments/assets/bcfecd6a-b81c-4e60-aced-f54b0c11c1d2)
+<img src="https://github.com/user-attachments/assets/bcfecd6a-b81c-4e60-aced-f54b0c11c1d2" alt="IMG1" width="300"/>
 
 ## FOTO DO PERFIL DO MEU DISCORD (CLONE)
 
